@@ -92,3 +92,12 @@ add_module status_cpu colour_gold_ish colour_grey_dark colour_bg colour_bg "CPU 
     "#(#{T:TMUX_PLUGIN_MANAGER_PATH}/tmux-cpu/scripts/cpu_fg_color.sh)#(#{T:TMUX_PLUGIN_MANAGER_PATH}/tmux-cpu/scripts/cpu_percentage.sh)" ""
 add_module status_ram colour_gold_ish colour_grey_dark colour_bg colour_bg "RAM " \
     "#(#{T:TMUX_PLUGIN_MANAGER_PATH}/tmux-cpu/scripts/ram_fg_color.sh)#(#{T:TMUX_PLUGIN_MANAGER_PATH}/tmux-cpu/scripts/ram_percentage.sh)" ""
+
+# set inactive/active window styles
+set window-style 'fg=#8b95a7,bg=#282c34'
+set window-active-style 'fg=#abb2bf,bg=#282c34'
+
+set pane-border-style bg='#{T:colour_bg}'
+set pane-border-style fg='#484c54'
+set pane-active-border-style bg='#{T:colour_bg}'
+set pane-active-border-style fg='#484c54'
