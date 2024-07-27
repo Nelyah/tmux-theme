@@ -81,8 +81,8 @@ set message-style bg="#{T:colour_bg}"
 set_env window_sep_left "#[fg=#{T:colour_grey_medium},bg=#{T:colour_bg}]#[fg=#{T:colour_white},bg=#{T:colour_grey_medium}]#I #[fg=#{T:colour_white},bg=#{T:colour_grey_medium}]"
 set_env window_sep_right "#[fg=#{T:colour_grey_medium},bg=#{T:colour_bg},bold]#[default]"
 set_env active_window_sep_left "#[fg=#{T:colour_blue_ish},bg=#{T:colour_bg}]#[fg=#{T:colour_bg},bg=#{T:colour_blue_ish}]#I #[fg=#{T:colour_white},bg=#{T:colour_grey_medium}]"
-set window-status-format '#{T:window_sep_left} #W#{T:window_sep_right} '
-set window-status-current-format '#{T:active_window_sep_left} #W#{T:window_sep_right} '
+set window-status-format '#{T:window_sep_left} #W#{T:window_sep_right}'
+set window-status-current-format '#{T:active_window_sep_left} #W#{T:window_sep_right}'
 
 # module_name bg_left bg_right fg_left fg_right text_left text_right bold?
 add_module status_time colour_grey_light colour_grey_light colour_bg colour_bg "" "%H:%M:%S " bold
