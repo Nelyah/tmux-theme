@@ -62,7 +62,7 @@ setw window-status-bell-style fg=colour255
 setw window-status-bell-style bg=colour75
 
 
-set_env colour_bg "#282c34"
+set_env colour_bg "#222222"
 set_env colour_grey_dark "#383d47"
 set_env colour_grey_medium "#4d4d4d"
 set_env colour_grey_light "#888c94"
@@ -81,8 +81,8 @@ set message-style bg="#{T:colour_bg}"
 set_env window_sep_left "#[fg=#{T:colour_grey_medium},bg=#{T:colour_bg}]#[fg=#{T:colour_white},bg=#{T:colour_grey_medium}]#I #[fg=#{T:colour_white},bg=#{T:colour_grey_medium}]"
 set_env window_sep_right "#[fg=#{T:colour_grey_medium},bg=#{T:colour_bg},bold]#[default]"
 set_env active_window_sep_left "#[fg=#{T:colour_blue_ish},bg=#{T:colour_bg}]#[fg=#{T:colour_bg},bg=#{T:colour_blue_ish}]#I #[fg=#{T:colour_white},bg=#{T:colour_grey_medium}]"
-set window-status-format '#{T:window_sep_left} #W#F#{T:window_sep_right}'
-set window-status-current-format '#{T:active_window_sep_left} #W#F#{T:window_sep_right}'
+set window-status-format '#{T:window_sep_left} #W#F#{T:window_sep_right} '
+set window-status-current-format '#{T:active_window_sep_left} #W#F#{T:window_sep_right} '
 
 # module_name bg_left bg_right fg_left fg_right text_left text_right bold?
 add_module status_time colour_grey_light colour_grey_light colour_bg colour_bg "" "%H:%M:%S " bold
@@ -94,8 +94,8 @@ add_module status_ram colour_gold_ish colour_grey_dark colour_bg colour_bg "RAM 
     "#(#{T:TMUX_PLUGIN_MANAGER_PATH}/tmux-cpu/scripts/ram_fg_color.sh)#(#{T:TMUX_PLUGIN_MANAGER_PATH}/tmux-cpu/scripts/ram_percentage.sh)" ""
 
 # set inactive/active window styles
-set window-style 'fg=#8b95a7,bg=#282c34'
-set window-active-style 'fg=#abb2bf,bg=#282c34'
+set window-style 'fg=#8b95a7,bg=#{T:colour_bg}'
+set window-active-style 'fg=#abb2bf,bg=#{T:colour_bg}'
 
 set pane-border-style bg='#{T:colour_bg}'
 set pane-border-style fg='#484c54'
